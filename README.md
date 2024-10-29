@@ -11,22 +11,21 @@ Features
 The package is divided into four main components:
 
 1.	Download Protein Structure from RCSB PDB Database
-	•	Fetches protein structures directly from the RCSB Protein Data Bank (PDB) for downstream processing.
+	- Fetches protein structures directly from the RCSB Protein Data Bank (PDB) for downstream processing.
 2.	Protein Modification in MGLTools (AutoDock)
-	•	Remove non-protein molecules: Removes water molecules, ions, and other ligands that are not part of the protein backbone.
-	•	Protonation at physiological pH: Adjusts hydrogen atoms to simulate physiological pH conditions.
-	•	Save in PDBQT format: Exports the modified protein structure in PDBQT format for compatibility with AutoDock.
+	- Remove non-protein molecules: Removes water molecules, ions, and other ligands that are not part of the protein backbone.
+	- Protonation at physiological pH: Adjusts hydrogen atoms to simulate physiological pH conditions.
+	- Save in PDBQT format: Exports the modified protein structure in PDBQT format for compatibility with AutoDock.
 3.	Investigation of Binding Sites Using Clustering Methods
-	•	Supports multiple binding sites by employing clustering techniques to identify potential regions of interest.
-	•	Clustering Methods:
-	•	QT-clustering: Quick and targeted clustering method for efficient binding site identification.
-	•	Spectral clustering: Analyzes similarity matrices for more complex binding site grouping.
-4.	Grid Box Calculation
-	•	Calculates grid box dimensions and positions for docking based on binding site coordinates.
-	•	Coordination options:
+   	- Supports multiple binding sites by employing clustering techniques to identify potential regions of interest.
+	- Clustering Methods:
+		1. QT-clustering: Quick and targeted clustering method for efficient binding site identification.
+		2. Spectral clustering: Analyzes similarity matrices for more complex binding site grouping.
+4.	Grid Box Calculation for molecular docking 
+	- Coordination options:
 	    1.	Center of true ligand: Uses the center of the bound ligand as the grid box center.
 	    2.	Center of binding residues: Centers on residues critical to the binding pocket.
-	•	Size: Specifies the grid box size around the selected center.
+	- Size: Specifies the grid box size around the selected center.
 
 Validation
 
