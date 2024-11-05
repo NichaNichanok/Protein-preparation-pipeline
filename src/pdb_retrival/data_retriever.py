@@ -57,25 +57,25 @@ class PDBDataRetriever:
 
         data = {  # type: ignore
             "experiment_data": {
-                "method": self._get_experiment_method(soup),
-                "resolution": self._get_resolution(soup),
-                "release_date": self._get_release_date(soup),
+                "method": self.get_experiment_method(soup),
+                "resolution": self.get_resolution(soup),
+                "release_date": self.get_release_date(soup),
             },
             "macromolecules": {
-                "name": self._get_macromolecule_name(soup),
-                "total_weight": self._get_size_kda(soup),
-                "unique_protein_chains": self._get_unique_chains(soup),
-                "classification": self._get_classification(soup),
-                "organism": self._get_organism(soup),
-                "expression_system": self._get_expression_system(soup),
-                "mutation": self._get_mutation(soup),
+                "name": self.get_macromolecule_name(soup),
+                "total_weight": self.get_size_kda(soup),
+                "unique_protein_chains": self.get_unique_chains(soup),
+                "classification": self.get_classification(soup),
+                "organism": self.get_organism(soup),
+                "expression_system": self.get_expression_system(soup),
+                "mutation": self.get_mutation(soup),
             },
-            "small_molecules": self._get_small_molecules(soup),
+            "small_molecules": self.get_small_molecules(soup),
         }
 
         return data  # type: ignore
 
-    def _get_experiment_method(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_experiment_method(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the experiment method from the HTML content.
 
@@ -92,7 +92,7 @@ class PDBDataRetriever:
         else:
             return None
 
-    def _get_resolution(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_resolution(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the resolution from the HTML content.
 
@@ -109,7 +109,7 @@ class PDBDataRetriever:
         else:
             return None
 
-    def _get_release_date(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_release_date(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the release date from the HTML content.
 
@@ -129,13 +129,13 @@ class PDBDataRetriever:
             dates = [
                 part
                 for part in date_parts
-                if part.strip() and self._is_date_format(part.strip())
+                if part.strip() and self.is_date_format(part.strip())
             ]
             if dates:
                 return dates[-1].replace("\xa0", "").strip()
         return None
 
-    def _is_date_format(self, text: str) -> bool:
+    def is_date_format(self, text: str) -> bool:
         """
         Checks if the given text matches the YYYY-MM-DD date format.
 
@@ -147,7 +147,7 @@ class PDBDataRetriever:
         """
         return bool(re.match(r"^\d{4}-\d{2}-\d{2}$", text))
 
-    def _get_macromolecule_name(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_macromolecule_name(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the macromolecule name from the HTML content.
 
@@ -166,7 +166,7 @@ class PDBDataRetriever:
                 return td_element.text.strip()
         return None
 
-    def _get_size_kda(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_size_kda(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the size in kDa from the HTML content.
 
@@ -182,7 +182,7 @@ class PDBDataRetriever:
             return size_tag.text.split(":")[1].strip()
         return None
 
-    def _get_unique_chains(self, soup: BeautifulSoup) -> Optional[int]:
+    def get_unique_chains(self, soup: BeautifulSoup) -> Optional[int]:
         """
         Extracts the number of unique protein chains from the HTML content.
 
@@ -201,7 +201,7 @@ class PDBDataRetriever:
                 return None
         return None
 
-    def _get_classification(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_classification(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the classification from the HTML content.
 
@@ -217,7 +217,7 @@ class PDBDataRetriever:
             return classification_tag.find("a").text.strip()  # type: ignore
         return None
 
-    def _get_organism(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_organism(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the organism from the HTML content.
 
@@ -233,7 +233,7 @@ class PDBDataRetriever:
             return organism_tag.find("a").text.strip()  # type: ignore
         return None
 
-    def _get_expression_system(self, soup: BeautifulSoup) -> Optional[str]:
+    def get_expression_system(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the expression system from the HTML content.
 
@@ -253,7 +253,7 @@ class PDBDataRetriever:
             return expression_system_tag.find("a").text.strip()  # type: ignore
         return None
 
-    def _get_mutation(self, soup: BeautifulSoup) -> Optional[bool]:
+    def get_mutation(self, soup: BeautifulSoup) -> Optional[bool]:
         """
         Extracts the mutation status from the HTML content.
 
@@ -273,7 +273,7 @@ class PDBDataRetriever:
             return mutation_text.lower() != "no"
         return None
 
-    def _get_small_molecules(self, soup: BeautifulSoup) -> Optional[Dict[str, str]]:
+    def get_small_molecules(self, soup: BeautifulSoup) -> Optional[Dict[str, str]]:
         """
         Extracts small molecules from the HTML content.
 
@@ -297,7 +297,7 @@ class PDBDataRetriever:
                 ligand_id_tag: Optional[Tag] = row.find("a")  # type: ignore
                 if ligand_id_tag is not None:
                     ligand_id = ligand_id_tag.text.strip()
-                    ligand_name = self._get_small_molecule_name(row)
+                    ligand_name = self.get_small_molecule_name(row)
                     if ligand_name is not None:
                         small_molecules[ligand_id] = ligand_name
                     else:
@@ -306,7 +306,7 @@ class PDBDataRetriever:
             return small_molecules if small_molecules else None
         return None
 
-    def _get_small_molecule_name(self, row: Tag) -> Optional[str]:
+    def get_small_molecule_name(self, row: Tag) -> Optional[str]:
         """
         Extracts the name of a small molecule from a table row.
 
