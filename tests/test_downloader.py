@@ -4,10 +4,7 @@ from unittest.mock import MagicMock, mock_open, patch
 
 import requests
 
-from src.pdb_retrival.downloader import (  # Replace with the actual module path
-    get_pdb,
-    validate_pdb_id,
-)
+from src.pdb_retrival.downloader import get_pdb, validate_pdb_id
 
 
 class TestPDBFunctions(unittest.TestCase):
