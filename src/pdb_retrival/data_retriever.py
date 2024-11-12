@@ -320,11 +320,47 @@ class PDBDataRetriever:
         if strong_tag is not None:
             return strong_tag.text.strip()
         return None
+    def print_data_retriever(self, data: Dict[str, Any]) -> None:
+        """
+        Prints the retrieved data in a readable format.
 
+        Args:
+            data (Dict[str, Any]): The data to print.
+        """
+        line_break: str = "-" * 50
+        print("\nRetrieved PDB Data of '{}'".format(self.pdb_id))
+        print(line_break)
+        # Macromolecule data
+        macromolecules = data.get("macromolecules", {})
+        print(f"  Macromolecule Name:\t\t{macromolecules.get('name', 'N/A')}")
+        print(f"  Total Weight (kDa):\t\t{macromolecules.get('total_weight', 'N/A')}")
+        print(f"  Unique Protein Chains:\t{macromolecules.get('unique_protein_chains', 'N/A')}")
+        print(f"  Classification:\t\t{macromolecules.get('classification', 'N/A')}")
+        print(f"  Organism:\t\t\t{macromolecules.get('organism', 'N/A')}")
+        print(f"  Expression System:\t\t{macromolecules.get('expression_system', 'N/A')}")
+        print(f"  Mutation:\t\t\t{macromolecules.get('mutation', 'N/A')}")
+        print(line_break)
+        # Experiment data
+        experiment_data = data.get("experiment_data", {})
+        print(f"  Experiment Method:\t{experiment_data.get('method', 'N/A')}")
+        print(f"  Resolution:\t\t{experiment_data.get('resolution', 'N/A')}")
+        print(f"  Release Date:\t\t{experiment_data.get('release_date', 'N/A')}")
+        print(line_break)
+        
+        
+        # Small molecules
+        small_molecules = data.get("small_molecules", {})
+        if small_molecules:
+            print("  Small Molecules:")
+            for ligand_id, name in small_molecules.items():
+                print(f"    {ligand_id}:\t{name}")
+        else:
+            print("  Small Molecules:\tN/A")
+        print(line_break)
 
 if __name__ == "__main__":
-    retriever = PDBDataRetriever("9RUB")  # Example PDB ID for testing
+    retriever = PDBDataRetriever("6o0k")  # Example PDB ID for testing
     html_content = retriever.fetch_data()
     if html_content:
         parsed_data = retriever.parse_data(html_content)
-        print(parsed_data)
+        retriever.print_data_retriever(parsed_data) 
