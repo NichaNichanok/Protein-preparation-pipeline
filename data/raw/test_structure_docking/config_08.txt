@@ -1,0 +1,14 @@
+receptor = 6o0k.pdbqt
+ligand = ligand.pdbqt
+
+# af2bind: p(bind) > 0.8
+center_x =  -11.808
+center_y = 1.671
+center_z = -14.641
+
+size_x = 34.000
+size_y = 34.000
+size_z = 34.000
+
+cpu = 12
+
