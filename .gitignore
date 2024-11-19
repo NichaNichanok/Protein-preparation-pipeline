@@ -114,3 +114,6 @@ docs/_build/
 # Temporary files
 *.tmp
 *.log
+
+# Ignore the code from the ISOKANNtool
+src/pdbqt_preparation/code_from_ISOKANNtool/
