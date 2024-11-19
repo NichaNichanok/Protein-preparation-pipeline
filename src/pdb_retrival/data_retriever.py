@@ -342,17 +342,20 @@ class PDBDataRetriever:
             Optional[str]: The binding affinity name if found, otherwise None.
         """
         # Locate the table containing binding affinity data by class or ID
-        table = soup.find("table", {"class": "table table-bordered table-condensed", "id": "binding-affinity-table"})
+        table = soup.find("table", {"class": "table table-bordered table-condensed",
+                                    "id": "binding-affinity-table"})
 
         # Check if the table was found
         if table:
-            # Locate the first row in the table body (assumes this row contains binding affinity data)
-            row = table.find("tbody").find("tr") # type: ignore
+            # Locate the first row in the table body 
+            # (assumes this row contains binding affinity data)
+            row = table.find("tbody").find("tr")  # type: ignore
 
-            # Extract the binding affinity name from the first cell (or adjust if the structure is different)
-            name_cell = row.find("td") # type: ignore
+            # Extract the binding affinity name from the first cell 
+            # (or adjust if the structure is different)
+            name_cell = row.find("td")  # type: ignore
             if name_cell:
-                return name_cell.get_text(strip=True) # type: ignore
+                return name_cell.get_text(strip=True)  # type: ignore
         return None
         
     def get_binding_affinity_value(self, soup: BeautifulSoup) -> Optional[str]:
@@ -366,21 +369,24 @@ class PDBDataRetriever:
             Optional[str]: The binding affinity value if found, otherwise None.
         """
         # Locate the table containing binding affinity data
-        table = soup.find("table", {"class": "table table-bordered table-condensed", "id": "binding-affinity-table"})
+        table = soup.find("table", {"class": "table table-bordered table-condensed",
+                                    "id": "binding-affinity-table"})
 
         # Check if the table was found
         if table:
-            # Locate the row with the binding affinity information (e.g., with id "row_0")
-            row = table.find("tr", id="row_0") # type: ignore
-            
+            # Locate the row with the binding affinity information
+            # (e.g., with id "row_0")
+            row = table.find("tr", id="row_0")  # type: ignore
+         
             # Find the cell with the Ki value
             if row:
-                value_cell = row.find_all("td")[2] # type: ignore  # Assuming the Ki value is in the third cell
+                # Assuming the Ki value is in the third cell
+                value_cell = row.find_all("td")[2]  # type: ignore 
                 if value_cell:
-                    return value_cell.get_text(strip=True).replace("\xa0", " ") # type: ignore
+                    return value_cell.get_text(strip=True).replace("\xa0", " ")  # type: ignore
         return None
 
-    
+  
     def print_data_retriever(self, data: Dict[str, Any]) -> None:
         """
         Prints the retrieved data in a readable format.
@@ -407,8 +413,7 @@ class PDBDataRetriever:
         print(f"  Resolution:\t\t{experiment_data.get('resolution', 'N/A')}")
         print(f"  Release Date:\t\t{experiment_data.get('release_date', 'N/A')}")
         print(line_break)
-        
-        
+
         # Small molecules
         small_molecules = data.get("small_molecules", {})
         if small_molecules:
@@ -418,15 +423,17 @@ class PDBDataRetriever:
         else:
             print("  Small Molecules:\tN/A")
         print(line_break)
-        
+
         # Binding affinity
         binding_affinity = data.get("binding_affinity", "N/A")
         print("  Binding Affinity:")
         print(f"    {binding_affinity}")
         print(line_break)
 
+
 if __name__ == "__main__":
-    retriever = PDBDataRetriever("6o0k")  # Example PDB ID for testing: "1sqt" w/ binding affinity
+    # Example PDB ID for testing: "1sqt" w/ binding affinity
+    retriever = PDBDataRetriever("6o0k")
     html_content = retriever.fetch_data()
     if html_content:
         parsed_data = retriever.parse_data(html_content)

@@ -13,7 +13,9 @@ def initialize_pymol():
     pymol.finish_launching()  # type: ignore
 
 
-def strip_protein_extract_coordinate_info(input_path: str, filename: str, output_directory: str):
+def strip_protein_extract_coordinate_info(input_path: str,
+                                          filename: str,
+                                          output_directory: str):
     """
     Process a single PDB file: identify ligand center, remove non-protein atoms,
     and save the modified file.
@@ -39,23 +41,26 @@ def strip_protein_extract_coordinate_info(input_path: str, filename: str, output
     for residue_name, instances in organic_molecules.items():
         center_of_mass_dict[residue_name] = []
         for chain_id, residue_number in instances:
-            center_of_mass = calculate_center_of_mass(residue_name, chain_id, residue_number)
-            print(f"Center of mass for {residue_name} in chain {chain_id} at residue {residue_number}: {center_of_mass}")
+            center_of_mass = calculate_center_of_mass(residue_name,
+                                                      chain_id,
+                                                      residue_number)
+            print(f"Center of mass for {residue_name} in chain {chain_id} at "
+                  f"residue {residue_number}: {center_of_mass}")
             center_of_mass_dict[residue_name].append(center_of_mass)
-    
+
     # Remove non-protein atoms
     cmd.remove("not polymer.protein")  # type: ignore
-    
+
     protein_center_of_mass = calculate_protein_center_of_mass()
     print(f"Center of mass for protein: {protein_center_of_mass}")
     center_of_mass_dict["protein"] = [protein_center_of_mass]
-    
+
     print("Extract organic molecules with coordinates:")
     print(center_of_mass_dict)
 
     # Write grid coordinates to config file
     save_grid_coordinates(output_directory, pdb_file_name, center_of_mass_dict)
-    
+
     # Save the modified PDB file
     save_modified_structure(output_directory, filename, pdb_file_name)
     print(f"Processed {filename}. Output saved to {output_directory}")
@@ -68,7 +73,8 @@ def get_organic_molecules(pdb_file_path: str) -> Dict[str, List[tuple[str, str]]
     Args:
         pdb_file_path (str): Full path to the PDB file.
     Returns:
-        Dict[str, List[tuple[str, str]]]: Dictionary with residue names as keys and lists of (chain, residue number) tuples as values.
+        Dict[str, List[tuple[str, str]]]: Dictionary with residue names as keys and
+        lists of (chain, residue number) tuples as values.
     """
     organic_molecules: Dict[str, List[tuple[str, str]]] = {}
 
@@ -98,7 +104,9 @@ def get_organic_molecules(pdb_file_path: str) -> Dict[str, List[tuple[str, str]]
     return organic_molecules
 
 
-def calculate_center_of_mass(residue_name: str, chain_id: str, residue_number: str) -> List[float]:
+def calculate_center_of_mass(residue_name: str,
+                             chain_id: str,
+                             residue_number: str) -> List[float]:
     """
     Selects the ligand and calculates its center of mass.
 
@@ -111,9 +119,12 @@ def calculate_center_of_mass(residue_name: str, chain_id: str, residue_number: s
     - List[float]: Center of mass coordinates (x, y, z).
     """
     selection_name = f"{residue_name}_{chain_id}_{residue_number}"
-    selection_expression = f"(resn {residue_name} and chain {chain_id} and resi {residue_number})"
+    selection_expression = (
+        f"(resn {residue_name} and chain {chain_id} and resi {residue_number})"
+    )
     cmd.select(selection_name, selection_expression)  # type: ignore
     return cmd.centerofmass(selection_name)  # type: ignore
+
 
 def calculate_protein_center_of_mass() -> List[float]:
     """
@@ -129,14 +140,17 @@ def calculate_protein_center_of_mass() -> List[float]:
     return cmd.centerofmass("protein_structure")  # type: ignore
 
 
-def save_grid_coordinates(output_directory: str, pdb_file_name: str, center_of_mass_dict: Dict[str, List[List[float]]]):
+def save_grid_coordinates(output_directory: str,
+                          pdb_file_name: str,
+                          center_of_mass_dict: Dict[str, List[List[float]]]):
     """
     Save the coordinates of the ligand's center of mass to a config file.
 
     Args:
     - output_directory (str): Directory for the config file.
     - pdb_file_name (str): Name of the original PDB file.
-    - center_of_mass_dict (Dict[str, List[List[float]]]): Center of mass coordinates for each organic molecule.
+    - center_of_mass_dict (Dict[str, List[List[float]]]): Center of mass
+    coordinates for each organic molecule.
     """
     # Create config file path with modified name
     base_name = os.path.splitext(pdb_file_name)[0]
@@ -145,7 +159,9 @@ def save_grid_coordinates(output_directory: str, pdb_file_name: str, center_of_m
     with open(config_path, "w") as config_file:
         for residue_name, coordinates_list in center_of_mass_dict.items():
             for center_of_mass in coordinates_list:
-                config_file.write(f"Grid coordinates for ligand '{residue_name}' in '{base_name}':\n")
+                config_file.write(
+                    f"Grid coordinates for ligand '{residue_name}' in '{base_name}':\n"
+                )
                 config_file.write("X: {:.3f}\n".format(center_of_mass[0]))
                 config_file.write("Y: {:.3f}\n".format(center_of_mass[1]))
                 config_file.write("Z: {:.3f}\n".format(center_of_mass[2]))
@@ -166,7 +182,7 @@ def save_modified_structure(output_directory: str, filename: str, object_name: s
     cmd.save(output_file_path, object_name, format="pdb")  # type: ignore
 
 
-def process_pdb_files(input_path: str, output_directory: str):
+def process_pdb_files(input_path: str, output_directory: str) -> List[str]:
     """
     Process all experimental PDB files in the input directory:
     - Identify the ligand and its center of mass for grid coordinates.
@@ -179,17 +195,27 @@ def process_pdb_files(input_path: str, output_directory: str):
     """
     initialize_pymol()
 
+    processed_files = []
     for filename in os.listdir(input_path):
+        processed_files.append(filename)  # type: ignore
         if filename.endswith(".pdb"):
             try:
-                strip_protein_extract_coordinate_info(input_path, filename, output_directory)
+                strip_protein_extract_coordinate_info(input_path,
+                                                      filename,
+                                                      output_directory)
+                print(f"You {filename} file is stripped and grid coordinates "
+                      "are extracted!")
             except Exception as e:
                 print(f"Error processing {filename}: {e}")
-
     pymol.cmd.quit()
+    return processed_files  # type: ignore
 
 
 if __name__ == "__main__":
-    input_path = "/Users/nicha/dev/Protein-preparation-pipeline/data/raw/test"
-    output_directory = "/Users/nicha/dev/Protein-preparation-pipeline/data/raw/test"
+    input_path = (
+        "./data/raw/test_structure_docking/test_pdbqt_prep"
+    )
+    output_directory = (
+        "./data/raw/test_structure_docking/test_pdbqt_prep"
+    )
     process_pdb_files(input_path, output_directory)
