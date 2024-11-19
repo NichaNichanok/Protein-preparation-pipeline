@@ -31,3 +31,7 @@ Validation
 
 The Posebuster dataset is used to validate the pipeline’s effectiveness in preparing proteins and predicting potential binding sites, ensuring reliable and reproducible results.
 
+Note: 
+
+To install this package run one of the following:
+conda install conda-forge::pymol-open-source

@@ -1,0 +1,4 @@
+1. Open PDB file
+2. Remove non-protein molecules
+3. Protonation at pH
+4. Save file in PDBQT
