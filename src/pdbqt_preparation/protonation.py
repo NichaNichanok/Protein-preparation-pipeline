@@ -79,8 +79,8 @@ def protonate_and_convert(input_file: str, pH_value: float, output_dir: str) -> 
 
 if __name__ == '__main__':
     print('Protonation and conversion is starting!')
-    input_file = '/Users/nicha/dev/Protein-preparation-pipeline/data/raw/test2/6o0k_stripped.pdb'
-    output_dir = '/Users/nicha/dev/Protein-preparation-pipeline/data/raw/test2/'
+    input_file = './data/raw/test_structure_docking/test_pdbqt_prep/6o0k_stripped.pdb'
+    output_dir = './data/raw/test_structure_docking/test_pdbqt_prep'
     pH_value = 7.0
     output_pdbqt_file = protonate_and_convert(input_file, pH_value, output_dir)
-    print(f'Protonation and conversion is done! Output PDBQT file saved at: {output_pdbqt_file}')
+    print(f'Output PDBQT file saved at: {output_pdbqt_file}')
