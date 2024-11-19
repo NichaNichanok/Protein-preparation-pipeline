@@ -1,0 +1,1107 @@
+MODEL 1
+REMARK VINA RESULT:     -12.1      0.000      0.000
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -15.565   3.616 -15.462  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.220   3.994 -12.661  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -14.654   4.329 -14.538  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -15.416   4.991 -13.384  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -17.108   3.270 -13.573  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -16.311   2.602 -14.679  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -14.818   2.965 -16.557  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -14.056   3.910 -17.446  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -14.844   4.984 -18.154  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -14.053   5.485 -19.353  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -12.626   5.886 -18.966  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -11.906   6.486 -20.173  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -11.884   4.631 -18.501  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -12.656   6.910 -17.835  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -12.717   3.702 -17.674  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -11.975   2.528 -17.170  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -11.214   2.609 -16.006  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -10.487   1.530 -15.561  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -10.504   0.345 -16.282  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301      -9.626  -1.028 -15.709  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -11.269   0.247 -17.437  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -12.017   1.320 -17.866  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -16.672   4.198 -11.370  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -17.254   3.164 -10.661  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -17.691   3.351  -9.372  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -17.556   4.571  -8.710  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -16.935   5.609  -9.418  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -16.508   5.431 -10.721  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -18.246   2.286  -8.687  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -17.448   1.345  -8.070  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -17.961   0.100  -7.765  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -17.242  -0.883  -7.207  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -15.963  -0.569  -6.875  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -15.026  -1.411  -6.350  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -15.365   0.686  -7.117  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -13.828  -0.717  -6.238  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -13.978   0.560  -6.681  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -16.123   1.661  -7.757  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -18.009   4.806  -7.299  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -19.169   4.590  -6.927  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -17.057   5.252  -6.403  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -17.333   5.241  -4.822  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -18.736   5.491  -4.563  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -16.365   6.124  -4.248  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -16.958   3.569  -4.318  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -15.637   3.260  -3.996  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -15.317   1.960  -3.645  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -16.282   0.918  -3.588  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -17.597   1.277  -3.944  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -17.935   2.591  -4.281  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -13.903   1.718  -3.387  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -13.555   0.652  -2.915  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -13.114   2.626  -3.633  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -15.936  -0.359  -3.183  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -16.889  -1.425  -2.905  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -16.166  -2.635  -2.331  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -14.803  -2.828  -2.987  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -14.098  -4.016  -2.367  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -13.925  -3.838  -0.965  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -15.201  -3.744  -0.329  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -15.967  -2.543  -0.831  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 2
+REMARK VINA RESULT:     -10.2      2.136      2.776
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -15.110   3.024 -15.777  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.331   3.897 -13.295  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -16.399   2.468 -15.305  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -16.516   2.520 -13.777  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -15.067   4.460 -13.776  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -15.007   4.420 -15.293  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -15.018   2.987 -17.250  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -14.159   4.066 -17.855  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -14.861   5.174 -18.598  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -13.879   5.851 -19.544  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -12.596   6.274 -18.822  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -11.688   7.045 -19.779  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -11.875   5.012 -18.342  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -12.933   7.157 -17.624  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -12.791   3.953 -17.812  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -12.085   2.766 -17.286  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -11.483   2.792 -16.030  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -10.788   1.703 -15.558  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -10.676   0.566 -16.344  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301      -9.838  -0.821 -15.743  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -11.282   0.523 -17.593  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -12.001   1.603 -18.051  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -16.775   4.317 -12.054  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -17.422   3.435 -11.208  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -17.853   3.837  -9.967  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -17.648   5.132  -9.491  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -16.964   6.015 -10.337  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -16.542   5.621 -11.593  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -18.473   2.920  -9.138  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -17.741   1.970  -8.456  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -18.350   0.807  -8.029  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -17.703  -0.183  -7.400  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -16.392   0.046  -7.124  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -15.517  -0.825  -6.545  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -15.696   1.217  -7.491  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -14.260  -0.233  -6.521  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -14.313   1.008  -7.074  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -16.386   2.194  -8.200  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -18.093   5.600  -8.136  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -19.251   5.967  -7.906  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -17.150   5.577  -7.127  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -17.574   5.751  -5.589  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -18.764   6.572  -5.494  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -16.395   6.176  -4.902  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -17.989   4.098  -5.053  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -16.979   3.313  -4.499  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -17.269   2.015  -4.118  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -18.561   1.441  -4.258  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -19.541   2.267  -4.843  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -19.264   3.587  -5.214  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -16.136   1.251  -3.608  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -16.334   0.190  -3.048  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -15.015   1.734  -3.741  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -18.828   0.156  -3.818  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -19.797  -0.179  -2.783  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -21.024  -0.827  -3.408  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -20.906  -2.347  -3.412  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -22.157  -2.958  -4.006  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -23.316  -2.577  -3.272  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -23.484  -1.159  -3.336  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -22.311  -0.447  -2.704  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 3
+REMARK VINA RESULT:     -10.1      2.210      2.969
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -15.557   3.592 -15.187  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.118   4.094 -12.385  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -14.614   4.339 -14.325  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -15.335   5.054 -13.176  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -17.039   3.335 -13.235  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -16.281   2.617 -14.337  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -14.849   2.891 -16.276  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -14.147   3.794 -17.254  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -14.978   4.849 -17.941  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -14.275   5.298 -19.214  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -12.821   5.699 -18.948  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -12.188   6.247 -20.227  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -12.055   4.455 -18.492  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -12.760   6.765 -17.858  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -12.831   3.565 -17.573  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -12.062   2.404 -17.081  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -11.238   2.514 -15.962  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -10.488   1.445 -15.531  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -10.543   0.243 -16.221  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301      -9.634  -1.116 -15.662  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -11.369   0.117 -17.330  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -12.140   1.179 -17.743  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -16.527   4.355 -11.089  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -17.081   3.353 -10.316  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -17.475   3.597  -9.022  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -17.323   4.847  -8.421  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -16.731   5.853  -9.197  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -16.347   5.617 -10.504  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -18.001   2.563  -8.270  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -17.195   1.552  -7.790  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -17.434   0.244  -8.164  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -16.674  -0.789  -7.778  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -15.667  -0.496  -6.914  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -14.733  -1.362  -6.426  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -15.370   0.803  -6.452  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -13.836  -0.645  -5.645  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -14.179   0.671  -5.619  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -16.141   1.860  -6.926  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -17.729   5.144  -7.007  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -16.933   5.095  -6.062  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -19.044   5.512  -6.800  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -19.518   6.149  -5.405  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -20.837   6.731  -5.551  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -18.446   6.990  -4.972  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -19.640   4.754  -4.298  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -20.402   3.658  -4.701  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -20.545   2.585  -3.840  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -19.940   2.542  -2.555  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -19.200   3.682  -2.185  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -19.032   4.765  -3.055  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -21.409   1.514  -4.322  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -20.981   0.724  -5.142  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -22.559   1.472  -3.895  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -20.062   1.430  -1.740  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -18.941   0.646  -1.238  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -18.726  -0.578  -2.117  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -20.046  -1.272  -2.432  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -19.798  -2.461  -3.335  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -19.174  -2.063  -4.551  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -17.894  -1.489  -4.272  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -18.034  -0.247  -3.424  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 4
+REMARK VINA RESULT:     -10.0      1.634      2.109
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -15.594   3.419 -15.534  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.145   3.822 -12.714  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -14.710   4.241 -14.677  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -15.473   4.866 -13.503  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -17.005   2.992 -13.560  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -16.204   2.367 -14.688  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -14.844   2.807 -16.648  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -14.057   3.778 -17.487  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -14.829   4.857 -18.203  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -13.997   5.392 -19.360  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -12.592   5.801 -18.907  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -11.831   6.434 -20.072  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -11.853   4.545 -18.437  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -12.679   6.802 -17.758  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -12.708   3.590 -17.664  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -11.973   2.415 -17.154  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -11.239   2.488 -15.972  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -10.518   1.407 -15.521  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -10.513   0.230 -16.253  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301      -9.642  -1.145 -15.672  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -11.250   0.139 -17.426  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -11.993   1.213 -17.862  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -16.551   4.024 -11.407  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -17.023   2.967 -10.651  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -17.414   3.153  -9.347  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -17.339   4.395  -8.717  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -16.829   5.458  -9.475  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -16.450   5.280 -10.793  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -17.856   2.067  -8.614  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -16.964   1.224  -7.983  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -17.019  -0.136  -8.216  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -16.164  -1.016  -7.678  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -15.255  -0.505  -6.806  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -14.255  -1.188  -6.178  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -15.148   0.864  -6.483  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -13.502  -0.282  -5.442  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -14.004   0.974  -5.584  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -16.011   1.755  -7.111  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -17.743   4.629  -7.291  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -17.210   5.490  -6.581  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -18.773   3.853  -6.798  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -19.498   4.215  -5.413  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -20.909   4.448  -5.639  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -18.719   5.259  -4.823  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -19.325   2.739  -4.422  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -19.347   1.505  -5.071  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -19.258   0.348  -4.318  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -19.137   0.357  -2.903  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -19.143   1.627  -2.293  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -19.212   2.804  -3.045  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -19.352  -0.894  -5.077  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -18.339  -1.518  -5.330  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -20.464  -1.247  -5.460  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -18.999  -0.819  -2.186  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -17.865  -1.137  -1.329  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -16.939  -2.119  -2.033  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -15.531  -1.550  -2.173  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -14.632  -2.566  -2.844  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -14.577  -3.778  -2.099  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -15.879  -4.365  -2.037  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -16.848  -3.453  -1.321  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 5
+REMARK VINA RESULT:     -10.0      2.356      3.900
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -15.263   2.956 -15.085  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.320   4.013 -12.599  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -16.549   2.485 -14.522  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -16.587   2.622 -12.995  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -15.060   4.493 -13.170  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -15.077   4.370 -14.683  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -15.247   2.838 -16.557  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -14.527   3.951 -17.270  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -15.372   5.032 -17.896  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -14.563   5.750 -18.968  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -13.207   6.222 -18.435  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -12.478   7.031 -19.507  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -12.376   4.989 -18.073  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -13.402   7.089 -17.194  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -13.163   3.893 -17.426  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -12.343   2.735 -17.016  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -12.344   1.558 -17.762  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -11.615   0.465 -17.356  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -10.874   0.529 -16.185  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301      -9.924  -0.828 -15.689  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -10.855   1.699 -15.439  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -11.562   2.801 -15.862  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -16.684   4.517 -11.363  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -17.212   3.683 -10.395  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -17.561   4.170  -9.159  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -17.388   5.509  -8.810  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -16.822   6.346  -9.781  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -16.483   5.865 -11.032  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -18.062   3.300  -8.208  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -17.353   2.180  -7.826  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -17.835   0.922  -8.134  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -17.188  -0.213  -7.837  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -16.034  -0.073  -7.133  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -15.178  -1.069  -6.765  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -15.486   1.167  -6.747  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -14.082  -0.494  -6.134  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -14.220   0.859  -6.089  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -16.153   2.327  -7.128  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -17.745   6.071  -7.465  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -18.754   6.761  -7.279  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -16.905   5.758  -6.415  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -17.338   6.031  -4.894  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -17.977   7.327  -4.787  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -16.176   5.775  -4.102  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -18.559   4.773  -4.548  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -18.111   3.486  -4.253  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -19.041   2.487  -4.025  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -20.443   2.714  -4.069  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -20.843   4.026  -4.394  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -19.913   5.048  -4.607  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -18.482   1.162  -3.786  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -18.405   0.370  -4.706  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -18.133   0.888  -2.640  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -21.344   1.703  -3.785  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -22.431   1.293  -4.664  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -21.926   1.174  -6.096  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -21.781  -0.285  -6.512  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -21.313  -0.365  -7.949  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -22.227   0.285  -8.826  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -22.304   1.675  -8.499  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -22.828   1.870  -7.095  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 6
+REMARK VINA RESULT:      -9.9      4.694      9.006
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -12.730   5.218 -22.936  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -14.411   5.216 -20.572  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -13.830   4.242 -22.763  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -14.116   3.963 -21.283  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -13.336   6.194 -20.757  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -13.109   6.466 -22.233  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -12.478   5.495 -24.365  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -11.082   5.178 -24.830  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -10.728   3.725 -25.021  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301      -9.216   3.562 -24.981  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301      -8.515   4.525 -25.945  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301      -7.011   4.252 -25.955  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301      -8.771   5.956 -25.466  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301      -9.069   4.352 -27.357  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -10.158   6.188 -24.955  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -10.419   7.587 -24.560  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -10.236   8.004 -23.243  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -10.522   9.295 -22.866  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -11.006  10.195 -23.805  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301     -11.329  11.830 -23.347  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -11.180   9.795 -25.123  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -10.868   8.511 -25.504  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -15.090   5.246 -19.367  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -14.485   4.784 -18.213  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -15.144   4.824 -17.008  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -16.433   5.343 -16.881  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -17.031   5.840 -18.046  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -16.379   5.788 -19.264  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -14.498   4.378 -15.870  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -13.436   3.501 -15.954  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -12.157   3.940 -15.673  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -11.079   3.144 -15.688  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -11.294   1.860 -16.077  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -10.372   0.856 -16.120  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -12.559   1.334 -16.415  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -11.018  -0.317 -16.490  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -12.343  -0.083 -16.690  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -13.664   2.173 -16.325  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -17.176   5.415 -15.579  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -16.873   6.211 -14.683  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -18.251   4.562 -15.425  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -19.302   4.755 -14.228  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -20.375   3.790 -14.351  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -19.633   6.146 -14.216  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -18.370   4.372 -12.753  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -18.405   5.283 -11.697  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -17.656   5.026 -10.563  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -16.850   3.865 -10.418  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -16.830   2.988 -11.521  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -17.599   3.227 -12.665  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -17.707   6.063  -9.539  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -16.936   7.002  -9.600  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -18.518   5.926  -8.628  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -16.154   3.615  -9.248  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -16.686   2.877  -8.111  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -16.111   1.467  -8.091  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -15.083   1.304  -6.977  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -14.560  -0.116  -6.964  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -15.616  -1.052  -6.769  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -16.542  -0.968  -7.855  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -17.175   0.402  -7.919  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 7
+REMARK VINA RESULT:      -9.9      6.728     15.287
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -16.358   3.739 -10.497  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.151   4.070 -13.372  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -15.612   4.868 -11.100  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -15.063   4.512 -12.486  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -16.906   2.968 -12.772  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -17.460   3.374 -11.418  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -16.899   4.101  -9.172  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -16.824   3.007  -8.141  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -16.400   1.639  -8.613  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -16.864   0.591  -7.611  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -16.432   0.941  -6.183  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -16.820  -0.188  -5.229  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -17.146   2.229  -5.766  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -14.922   1.153  -6.127  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -17.244   3.250  -6.856  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -17.872   4.517  -6.427  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -17.204   5.392  -5.573  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -17.806   6.550  -5.138  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -19.096   6.850  -5.548  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301     -19.844   8.322  -5.038  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -19.768   5.993  -6.409  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -19.154   4.849  -6.865  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -16.038   4.080 -14.751  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -14.793   4.087 -15.350  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -14.670   4.080 -16.719  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -15.777   4.047 -17.566  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -17.038   4.008 -16.956  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -17.169   4.031 -15.579  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -13.408   4.060 -17.282  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -12.451   3.164 -16.853  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -11.381   3.606 -16.101  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -10.434   2.795 -15.610  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -10.534   1.485 -15.956  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301      -9.728   0.467 -15.538  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -11.572   0.951 -16.747  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -10.223  -0.723 -16.055  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -11.335  -0.488 -16.802  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -12.573   1.812 -17.185  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -15.679   4.025 -19.063  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -15.189   3.074 -19.684  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -16.192   5.114 -19.739  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -16.428   5.073 -21.326  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -17.001   6.326 -21.773  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -17.145   3.863 -21.585  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -14.787   4.928 -22.016  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -13.862   5.931 -21.728  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -12.599   5.861 -22.287  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -12.192   4.802 -23.143  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -13.170   3.826 -23.421  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -14.444   3.876 -22.846  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -11.721   6.984 -21.980  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -11.222   7.068 -20.874  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -11.545   7.827 -22.856  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -10.904   4.737 -23.644  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -10.495   3.905 -24.768  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301      -9.352   4.572 -25.521  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301      -8.891   5.842 -24.815  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301      -7.733   6.458 -25.571  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301      -6.640   5.550 -25.669  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301      -7.039   4.392 -26.406  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301      -8.156   3.661 -25.699  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 8
+REMARK VINA RESULT:      -9.6      6.508     14.321
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -16.886   3.001  -9.909  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -16.089   4.417 -12.313  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -16.136   4.277  -9.850  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -15.267   4.485 -11.096  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -16.851   3.167 -12.367  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -17.722   3.017 -11.133  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -17.734   2.822  -8.715  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -17.088   2.056  -7.592  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -16.523   0.696  -7.918  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -16.392  -0.118  -6.638  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -15.632   0.650  -5.552  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -15.428  -0.242  -4.328  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -16.462   1.874  -5.158  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -14.274   1.102  -6.080  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -17.132   2.553  -6.312  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -17.873   3.773  -5.934  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -19.203   3.704  -5.524  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -19.906   4.844  -5.215  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -19.290   6.082  -5.320  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301     -20.155   7.517  -4.895  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -17.962   6.164  -5.716  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -17.251   5.020  -5.998  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -15.681   4.959 -13.519  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -15.124   4.154 -14.494  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -14.730   4.679 -15.701  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -14.885   6.030 -16.012  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -15.480   6.838 -15.034  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -15.864   6.318 -13.811  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -14.201   3.838 -16.662  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -13.091   3.062 -16.396  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -11.966   3.638 -15.839  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -10.865   2.949 -15.510  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -10.875   1.627 -15.825  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301      -9.901   0.715 -15.543  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -11.965   0.962 -16.425  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -10.339  -0.536 -15.961  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -11.579  -0.443 -16.510  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -13.115   1.697 -16.693  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -14.479   6.633 -17.324  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -13.530   7.418 -17.431  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -15.201   6.249 -18.438  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -14.677   6.573 -19.920  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -13.233   6.688 -19.920  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -15.451   7.685 -20.376  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -15.125   5.131 -20.874  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -14.103   4.292 -21.318  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -14.425   3.194 -22.095  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -15.760   2.872 -22.460  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -16.753   3.762 -22.005  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -16.442   4.864 -21.203  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -13.287   2.412 -22.564  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -12.589   2.849 -23.459  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -13.098   1.314 -22.048  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -16.050   1.736 -23.195  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -17.091   1.652 -24.211  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -17.988   0.453 -23.941  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -18.155  -0.406 -25.189  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -19.021  -1.607 -24.874  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -18.452  -2.395 -23.833  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -18.372  -1.623 -22.632  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -17.471  -0.425 -22.820  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL
+MODEL 9
+REMARK VINA RESULT:      -9.5      2.413      3.740
+REMARK  26 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N@A_1  and  C13@A_7 
+REMARK    2  A    between atoms: N@B_2  and  C13@B_58 
+REMARK    3  A    between atoms: N1@A_2  and  C18@A_23 
+REMARK    4  A    between atoms: N1@B_12  and  C18@B_68 
+REMARK       I    between atoms: N2@A_41  and  C24@A_39 
+REMARK    5  A    between atoms: N2@A_41  and  S@A_42 
+REMARK       I    between atoms: N2@B_18  and  C24@B_80 
+REMARK    6  A    between atoms: N2@B_18  and  S@B_122 
+REMARK    7  A    between atoms: N3@A_54  and  C28@A_48 
+REMARK    8  A    between atoms: N3@A_54  and  C31@A_55 
+REMARK    9  A    between atoms: N3@B_24  and  C28@B_88 
+REMARK   10  A    between atoms: N3@B_24  and  C31@B_94 
+REMARK   11  A    between atoms: C4@A_8  and  C13@A_7 
+REMARK   12  A    between atoms: C4@B_28  and  C13@B_58 
+REMARK   13  A    between atoms: N4@A_51  and  C27@A_47 
+REMARK   14  A    between atoms: N4@B_30  and  C27@B_86 
+REMARK   15  A    between atoms: C5@A_15  and  C7@A_16 
+REMARK   16  A    between atoms: C5@B_34  and  C7@B_46 
+REMARK   17  A    between atoms: O6@A_29  and  C20@A_25 
+REMARK   18  A    between atoms: O6@A_29  and  C37@A_30 
+REMARK   19  A    between atoms: O6@B_44  and  C20@B_72 
+REMARK   20  A    between atoms: O6@B_44  and  C37@B_106 
+REMARK   21  A    between atoms: C21@A_26  and  C24@A_39 
+REMARK   22  A    between atoms: C21@B_74  and  C24@B_80 
+REMARK   23  A    between atoms: C25@A_45  and  S@A_42 
+REMARK   24  A    between atoms: C25@B_82  and  S@B_122 
+REMARK   25  A    between atoms: C31@A_55  and  C32@A_56 
+REMARK   26  A    between atoms: C31@B_94  and  C32@B_96 
+ROOT
+HETATM    1  N  ALBM A 301     -16.889   3.975 -15.101  0.61 14.95     0.145 N 
+HETATM    2  N1 ALBM A 301     -17.330   4.609 -12.305  0.61 13.88    -0.344 N 
+HETATM    3  C14ALBM A 301     -17.816   5.051 -14.683  0.61 13.99     0.275 C 
+HETATM    4  C15ALBM A 301     -18.405   4.787 -13.292  0.61 14.75     0.137 C 
+HETATM    5  C16ALBM A 301     -16.397   3.560 -12.723  0.61 10.05     0.137 C 
+HETATM    6  C17ALBM A 301     -15.812   3.877 -14.088  0.61 13.98     0.275 C 
+ENDROOT
+BRANCH   1   7
+HETATM    7  C13ALBM A 301     -16.312   4.251 -16.432  0.61 16.17     0.272 C 
+BRANCH   7   8
+HETATM    8  C4 ALBM A 301     -14.810   4.182 -16.495  0.61 17.66    -0.015 C 
+HETATM    9  C3 ALBM A 301     -14.164   2.860 -16.165  0.61 21.67     0.024 C 
+HETATM   10  C2 ALBM A 301     -12.710   3.089 -15.779  0.61 21.85     0.005 C 
+HETATM   11  C1 ALBM A 301     -11.968   3.923 -16.828  0.61 18.51     0.004 C 
+HETATM   12  C  ALBM A 301     -10.489   4.035 -16.457  0.61 25.87     0.000 C 
+HETATM   13  C6 ALBM A 301     -12.592   5.320 -16.862  0.61 16.31     0.026 C 
+HETATM   14  C44ALBM A 301     -12.095   3.272 -18.203  0.61 13.59     0.000 C 
+HETATM   15  C5 ALBM A 301     -14.083   5.323 -16.731  0.61 17.48    -0.028 C 
+BRANCH  15  16
+HETATM   16  C7 ALBM A 301     -14.685   6.668 -16.835  0.61 14.42    -0.004 A 
+HETATM   17  C8 ALBM A 301     -15.005   7.399 -15.692  0.61 15.30     0.001 A 
+HETATM   18  C9 ALBM A 301     -15.606   8.632 -15.789  0.61 12.57     0.011 A 
+HETATM   19  C10ALBM A 301     -15.907   9.154 -17.037  0.61 16.38     0.058 A 
+HETATM   20 CL@AALBM A 301     -16.626  10.721 -17.168  0.61 24.14    -0.082 Cl
+HETATM   21  C11ALBM A 301     -15.582   8.442 -18.184  0.61 14.69     0.011 A 
+HETATM   22  C12ALBM A 301     -14.956   7.221 -18.087  0.61 15.00     0.001 A 
+ENDBRANCH  15  16
+ENDBRANCH   7   8
+ENDBRANCH   1   7
+BRANCH   2  23
+HETATM   23  C18ALBM A 301     -17.535   4.765 -10.946  0.61 10.37     0.058 A 
+HETATM   24  C19ALBM A 301     -16.931   3.908 -10.045  0.61  9.57     0.042 A 
+HETATM   25  C20ALBM A 301     -17.115   4.064  -8.692  0.61  9.64     0.106 A 
+HETATM   26  C21ALBM A 301     -17.893   5.092  -8.160  0.61 11.22     0.081 A 
+HETATM   27  C22ALBM A 301     -18.477   5.980  -9.074  0.61 10.69     0.008 A 
+HETATM   28  C23ALBM A 301     -18.309   5.818 -10.436  0.61 12.48     0.017 A 
+BRANCH  25  29
+HETATM   29  O6 ALBM A 301     -16.474   3.203  -7.821  0.61 10.20    -0.305 OA
+BRANCH  29  30
+HETATM   30  C37ALBM A 301     -17.084   2.041  -7.392  0.61 10.68     0.119 A 
+HETATM   31  C38ALBM A 301     -16.345   0.881  -7.269  0.61 12.33     0.125 A 
+HETATM   32  N5 ALBM A 301     -16.850  -0.276  -6.820  0.61 12.17    -0.223 NA
+HETATM   33  C39ALBM A 301     -18.182  -0.279  -6.551  0.61 14.07     0.163 A 
+HETATM   34  N6 ALBM A 301     -18.907  -1.312  -6.035  0.61 14.26    -0.225 NA
+HETATM   35  C40ALBM A 301     -19.020   0.848  -6.680  0.61  9.74     0.039 A 
+HETATM   36  C43ALBM A 301     -20.211  -0.876  -5.835  0.61 10.83     0.101 A 
+HETATM   37  C42ALBM A 301     -20.337   0.424  -6.217  0.61 11.05     0.024 A 
+HETATM   38  C41ALBM A 301     -18.447   2.049  -7.088  0.61 11.04     0.029 A 
+ENDBRANCH  29  30
+ENDBRANCH  25  29
+BRANCH  26  39
+HETATM   39  C24ALBM A 301     -18.102   5.300  -6.689  0.61 14.08     0.291 C 
+HETATM   40  O  ALBM A 301     -19.213   5.202  -6.154  0.61 17.31    -0.264 OA
+HETATM   41  N2 ALBM A 301     -16.982   5.582  -5.932  0.61 14.68    -0.118 NA
+BRANCH  41  42
+HETATM   42  S  ALBM A 301     -17.023   5.516  -4.329  0.61 14.72     0.288 S 
+HETATM   43  O1 ALBM A 301     -18.314   5.965  -3.849  0.61 12.54    -0.198 OA
+HETATM   44  O2 ALBM A 301     -15.851   6.200  -3.877  0.61 14.51    -0.198 OA
+BRANCH  42  45
+HETATM   45  C25ALBM A 301     -16.857   3.778  -3.951  0.61 10.27     0.107 A 
+HETATM   46  C26ALBM A 301     -15.597   3.194  -4.079  0.61  9.72     0.038 A 
+HETATM   47  C27ALBM A 301     -15.456   1.841  -3.834  0.61  8.50     0.144 A 
+HETATM   48  C28ALBM A 301     -16.542   1.010  -3.446  0.61 13.78     0.098 A 
+HETATM   49  C29ALBM A 301     -17.797   1.643  -3.353  0.61 12.23     0.021 A 
+HETATM   50  C30ALBM A 301     -17.948   3.014  -3.580  0.61 13.18     0.015 A 
+BRANCH  47  51
+HETATM   51  N4 ALBM A 301     -14.117   1.307  -4.053  0.61 13.67    -0.112 N 
+HETATM   52  O4 ALBM A 301     -13.786   0.961  -5.171  0.61 15.39    -0.532 OA
+HETATM   53  O5 ALBM A 301     -13.378   1.201  -3.077  0.61 14.63    -0.532 OA
+ENDBRANCH  47  51
+BRANCH  48  54
+HETATM   54  N3 ALBM A 301     -16.354  -0.331  -3.158  0.61 15.98    -0.269 NA
+BRANCH  54  55
+HETATM   55  C31ALBM A 301     -16.878  -1.004  -1.978  0.61 19.97     0.126 C 
+BRANCH  55  56
+HETATM   56  C32ALBM A 301     -15.991  -2.187  -1.615  0.61 26.65     0.029 C 
+HETATM   57  C33ALBM A 301     -16.433  -3.454  -2.338  0.61 30.48     0.034 C 
+HETATM   58  C34ALBM A 301     -15.508  -4.598  -1.982  0.61 34.09     0.142 C 
+HETATM   59  O3 ALBM A 301     -14.161  -4.301  -2.336  0.61 35.77    -0.354 OA
+HETATM   60  C35ALBM A 301     -13.708  -3.165  -1.596  0.61 34.45     0.142 C 
+HETATM   61  C36ALBM A 301     -14.529  -1.941  -1.929  0.61 31.14     0.034 C 
+ENDBRANCH  55  56
+ENDBRANCH  54  55
+ENDBRANCH  48  54
+ENDBRANCH  42  45
+ENDBRANCH  41  42
+ENDBRANCH  26  39
+ENDBRANCH   2  23
+TORSDOF 26
+ENDMDL

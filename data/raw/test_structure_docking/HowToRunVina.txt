@@ -1,0 +1,71 @@
+How to Run Molecular docking by Vina?
+
+cd /data/raw/test_structure_docking
+
+# Copy your processed pdbqt file into the current directory
+cp test_pdbqt_prep/6o0k_stripped.pdbqt .
+
+# For positive control
+vina --receptor 6o0k_ctrl.pdbqt --ligand ligand_adt.pdbqt --config config.txt --out cntrl_processed_docking.pdbqt
+
+# For the validation
+vina --receptor 6o0k_stripped.pdbqt --ligand ligand_adt.pdbqt --config config.txt --out validation_test_processed_docking.pdbqt
+
+
+This is example of the content in the config.txt file: 
+
+receptor = 6o0k.pdbqt
+ligand = ligand.pdbqt
+
+#Based on Ven-ligand
+center_x =  -15.36
+center_y = 2.24
+center_z = -9.56
+
+size_x = 34.000
+size_y = 34.000
+size_z = 34.000
+
+cpu = 12
+
+# Result of positive control
+vina --receptor 6o0k_ctrl.pdbqt --ligand ligand_adt.pdbqt --config config.txt --out pp_processed_docking.pdbqt
+#################################################################
+# If you used AutoDock Vina in your work, please cite:          #
+#                                                               #
+# O. Trott, A. J. Olson,                                        #
+# AutoDock Vina: improving the speed and accuracy of docking    #
+# with a new scoring function, efficient optimization and       #
+# multithreading, Journal of Computational Chemistry 31 (2010)  #
+# 455-461                                                       #
+#                                                               #
+# DOI 10.1002/jcc.21334                                         #
+#                                                               #
+# Please see http://vina.scripps.edu for more information.      #
+#################################################################
+
+WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs
+Reading input ... done.
+Setting up the scoring function ... done.
+Analyzing the binding site ... done.
+Using random seed: -1253867677
+Performing search ... 
+0%   10   20   30   40   50   60   70   80   90   100%
+|----|----|----|----|----|----|----|----|----|----|
+***************************************************
+done.
+Refining results ... done.
+
+mode |   affinity | dist from best mode
+     | (kcal/mol) | rmsd l.b.| rmsd u.b.
+-----+------------+----------+----------
+   1        -12.1      0.000      0.000
+   2        -11.9      1.151      1.564
+   3        -10.7      1.289      2.090
+   4        -10.6      2.100      4.056
+   5        -10.3      3.967      6.328
+   6        -10.1      2.455      3.866
+   7         -9.8      4.715     13.338
+   8         -9.7      3.553      5.658
+   9         -9.7      1.970      2.622
+Writing output ... done.
