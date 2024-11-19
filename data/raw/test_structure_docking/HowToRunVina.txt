@@ -1,0 +1,18 @@
+How to Run Molecular docking by Vina?
+
+vina --receptor 6o0k_stripped.pdbqt --ligand ligand_adt.pdbqt --config config.txt --out pp_processed_docking.pdbqt
+
+
+receptor = 6o0k.pdbqt
+ligand = ligand.pdbqt
+
+#Based on Ven-ligand
+center_x =  -15.36
+center_y = 2.24
+center_z = -9.56
+
+size_x = 34.000
+size_y = 34.000
+size_z = 34.000
+
+cpu = 12
