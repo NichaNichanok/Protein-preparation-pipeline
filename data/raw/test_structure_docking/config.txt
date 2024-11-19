@@ -1,0 +1,14 @@
+receptor = 6o0k.pdbqt
+ligand = ligand.pdbqt
+
+#Based on Ven-ligand
+center_x =  -15.36
+center_y = 2.24
+center_z = -9.56
+
+size_x = 34.000
+size_y = 34.000
+size_z = 34.000
+
+cpu = 12
+
