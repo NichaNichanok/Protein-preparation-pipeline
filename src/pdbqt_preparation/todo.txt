@@ -2,3 +2,82 @@
 2. Remove non-protein molecules
 3. Protonation at pH
 4. Save file in PDBQT
+
+- Add the PDB fixer in the pipeline
+- PDB fixer t
+
+Fix the PDB-PDBQT
+
+
+
+PDBFixer: 
+
+Introdustion 
+
+PDB files often have a number of problems that must be fixed 
+before they can be used in a molecular dynamics simulation. 
+The details vary depending on how the file was generated:
+
+1. If the sstructure was genearated by X-ray crystallography,
+most or all the hydrogen atoms will usually be missing.
+
+2. There may also be missing heavy atoms in flexible regions 
+that could not be clearly resolved from the electron density. 
+This may include anything from a few atoms at the end of a 
+sidechain to entire loops.
+
+3. Many PDB files are also missing terminal atoms that should
+be present at the ends of chains.
+
+4. The file may include nonstandard residues that were added
+for crystallography purposes, but are not present in the 
+naturally occuring molecule you want to simulate.
+
+5. The file may include more than what you want to simulate. 
+For example, there may be salts, ligands or other molecules
+that were added for experimental purposes, but you only want 
+simulate a single copy.
+
+6. There may be multiple locations listed for some atoms.
+
+7. If you want to simulate the structure in explicit solvent,
+you will need to add a water box surrounding it.
+
+8. For membrane proteins, you may als need to add a lipid membrane.
+
+PDBFixer can fix all of these problems for you in a fully automated way.
+
+How to use PDBFixer on CLI?
+
+pdbfixer --pdbid=6o0k --add-residues --ph=7.4 --verbose 
+--keep-heterogens=none  --output=pdbfixer_74_keep_none.pdb
+
+- You can use the PDBFixer to download/ retrive the PDB file from the RCBS website!
+- Also to stripp all the non-protein atoms e.g. water and ligands
+- All even for protonation to add hydrogen and all the residues, e.g. 
+protonation even adjust the desired pH value
+
+- And get the result in PDB file, however need to convert into pdbqt files.
+
+- Using Obabel to convert seems to be the messing-up point: 
+-->The formatting in the file changes (no matter it was pdbFixed before),
+leads to the Unknown-Tag file error in the Vina docking
+
+pdbfixer --pdbid=6o0k --add-residues --ph=7.4 --output=pdbfixer_74.pdb
+pdbfixer --pdbid=6o0k --add-residues --ph=7.4 --verbose --keep-heterogens=none  --output=pdbfixer_74_keep_none.pdb
+obabel pdbfixer_74_keep_none.pdb -xr -O pdbfixer_obable.pdbqt
+
+
+!!! this didnt work
+obabel -ipdb pdbfixer_74_keep_none.pdb -ppdbqt -O pdbfixer_74_keep_none.pdbqt
+
+
+- In the ISOKANNtool, the MGLtools is used in for converting of receptor pdb file into pdbqt file,
+instead of Obabel.
+
+
+I have so much troubles to install mgltools on my mac :/
+- def mgltools_receptor(input, output):
+    MGLTOOLS_PATH = "mgltools_x86_64Linux2_1.5.7"
+    command = f"{MGLTOOLS_PATH}/bin/pythonsh {MGLTOOLS_PATH}/MGLToolsPckgs/AutoDockTools/Utilities24/prepare_receptor4.py -r {input} -o {output}"
+    result = subprocess.run(command, shell=True, capture_output=True, text=True)

@@ -36,6 +36,16 @@ Source Code Directory (src/)
 	•	module files (e.g., module1.py): These are individual Python files where your code is organized into logical modules.
 	•	__main__.py (optional): If you want users to be able to run your package directly with python -m project_name, this file acts as the entry point.
 
+	•	src/project_name/__main__.py:
+
+- Use this file when you want to provide a way to run your package as a script using the python -m project_name command.
+- This file should contain the main functionality of your package and should be designed to be the primary entry point for users.
+
+	•	src/main.py:
+
+- Use this file for specific tasks or workflows that are not necessarily part of the main package functionality.
+- This file can be used for development purposes, running tests, performing setup tasks, or any other specific tasks that you need to execute.
+
 Testing Directory (tests/)
 
 	•	tests/: This directory contains all test files. Testing is typically organized by module, with each module in src/project_name/ having a corresponding test file in tests/.

@@ -1,4 +1,4 @@
-REMARK  Name = /Users/nicha/dev/Protein-preparation-pipeline/data/raw/test_structure_docking/test_pdbqt_prep/6o0k_stripped.pqr
+REMARK  Name = ./data/raw/test_structure_docking/test_pdbqt_prep/6o0k_stripped.pdb
 REMARK  642 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: N_1  and  CA_2
@@ -1179,7 +1179,7 @@ ENDBRANCH 291 292
 ENDBRANCH 285 286
 ENDBRANCH   1 285
 TORSDOF 119
-REMARK  Name = /Users/nicha/dev/Protein-preparation-pipeline/data/raw/test_structure_docking/test_pdbqt_prep/6o0k_stripped.pqr
+REMARK  Name = ./data/raw/test_structure_docking/test_pdbqt_prep/6o0k_stripped.pdb
 REMARK  642 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
 REMARK    1  A    between atoms: N_1  and  CA_2
@@ -2406,7 +2406,7 @@ ATOM    374  CB  THR   187      -4.079  18.569  -2.323  0.00  0.00    +0.000 C
 ATOM    375  CG2 THR   187      -4.971  19.420  -1.453  0.00  0.00    +0.000 C 
 BRANCH 374 376
 ATOM    376  OG1 THR   187      -2.707  19.091  -2.215  0.00  0.00    +0.000 OA
-ATOM    377  HG1 THR   187      -2.072  18.436  -2.622  0.00  0.00    +0.000 HD
+ATOM    377  HG1 THR   187      -2.086  18.343  -1.984  0.00  0.00    +0.000 HD
 ENDBRANCH 374 376
 ENDBRANCH 214 374
 ENDBRANCH 212 214
@@ -2416,10 +2416,10 @@ ATOM    378  CB  HIS   186      -0.584  14.856  -3.216  0.00  0.00    +0.000 C
 BRANCH 378 379
 ATOM    379  CG  HIS   186      -0.033  14.938  -1.827  0.00  0.00    +0.000 A 
 ATOM    380  CD2 HIS   186       0.511  13.998  -1.022  0.00  0.00    +0.000 A 
-ATOM    381  ND1 HIS   186       0.039  16.142  -1.141  0.00  0.00    +0.000 N 
+ATOM    381  ND1 HIS   186       0.039  16.142  -1.141  0.00  0.00    +0.000 NA
 ATOM    382  CE1 HIS   186       0.579  15.918   0.051  0.00  0.00    +0.000 A 
-ATOM    383  NE2 HIS   186       0.890  14.633   0.139  0.00  0.00    +0.000 NA
-ATOM    384  HD1 HIS   186      -0.264  17.021  -1.487  0.00  0.00    +0.000 HD
+ATOM    383  NE2 HIS   186       0.890  14.633   0.139  0.00  0.00    +0.000 N 
+ATOM    384  HE2 HIS   186       1.331  14.195   0.924  0.00  0.00    +0.000 HD
 ENDBRANCH 378 379
 ENDBRANCH 209 378
 ENDBRANCH 207 209
