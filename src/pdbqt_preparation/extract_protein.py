@@ -86,11 +86,14 @@ def get_organic_molecules(pdb_file_path: str) -> Dict[str, List[tuple[str, str]]
             parts = line.split()
 
             # Check if the line has enough parts to access
-            if len(parts) >= 4:
+            if len(parts) > 4:
                 residue_name = parts[1]
                 chain_id = parts[2]
                 residue_number = parts[3]
-
+                if len(parts) == 4:
+                    residue_name = parts[1]
+                    chain_id = parts[2][0]
+                    residue_number = parts[2][1:]
                 # Append each instance of the organic molecule to the dictionary
                 if residue_name not in organic_molecules:
                     organic_molecules[residue_name] = []
@@ -213,9 +216,9 @@ def process_pdb_files(input_path: str, output_directory: str) -> List[str]:
 
 if __name__ == "__main__":
     input_path = (
-        "./data/raw/test_structure_docking/test_pdbqt_prep"
+        "./data/raw/test_pdbqt_prep"
     )
     output_directory = (
-        "./data/raw/test_structure_docking/test_pdbqt_prep"
+        "./data/raw/test_pdbqt_prep"
     )
     process_pdb_files(input_path, output_directory)
