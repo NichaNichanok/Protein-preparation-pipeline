@@ -258,7 +258,7 @@ class PDBDataRetriever:
         )  # type: ignore
         if (
             expression_system_tag is not None
-            and expression_system_tag.find("a") is not None
+            and expression_system_tag.find("a") is not None  # type: ignore
         ):
             return expression_system_tag.find("a").text.strip()  # type: ignore
         return None
@@ -330,7 +330,7 @@ class PDBDataRetriever:
         if strong_tag is not None:
             return strong_tag.text.strip()
         return None
-    
+  
     def get_binding_affinity_name(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the binding affinity name from the HTML content.
@@ -357,7 +357,7 @@ class PDBDataRetriever:
             if name_cell:
                 return name_cell.get_text(strip=True)  # type: ignore
         return None
-        
+       
     def get_binding_affinity_value(self, soup: BeautifulSoup) -> Optional[str]:
         """
         Extracts the binding affinity value from the HTML content.
@@ -433,7 +433,7 @@ class PDBDataRetriever:
 
 if __name__ == "__main__":
     # Example PDB ID for testing: "1sqt" w/ binding affinity
-    retriever = PDBDataRetriever("6o0k")
+    retriever = PDBDataRetriever("1sqt")
     html_content = retriever.fetch_data()
     if html_content:
         parsed_data = retriever.parse_data(html_content)
